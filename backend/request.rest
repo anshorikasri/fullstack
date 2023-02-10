@@ -1,0 +1,32 @@
+GET http://localhost:5000/users 
+
+###
+GET http://localhost:5000/users/63e5a416c4b9c46deeb40d97
+
+###
+POST http://localhost:5000/users 
+Content-Type: application/json
+
+
+{
+    "name": "fahmi",
+    "email": "fahmi@gmail.com",
+    "gender": "Male"
+}
+
+
+###
+PATCH http://localhost:5000/users/63e5a5ddc4b9c46deeb40da2
+Content-Type: application/json
+
+
+{
+    "name": "fahmi2",
+    "email": "fahmi2@gmail.com",
+    "gender": "Male"
+}
+
+
+###
+DELETE http://localhost:5000/users/63e5a416c4b9c46deeb40d97
+
